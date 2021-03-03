@@ -45,21 +45,21 @@ section.portfolio{
     padding-bottom: 50px;
 }
 .portfolio .card{
-    padding: 15px 0;
+    height: 500px; /* fake-content */
+    margin-bottom: 30px;
+    background-color: #ccc;
+    border-radius: 20px;
 }
 /* fake-content */
-.portfolio .card .box-fake{
-    height: 500px;
-}
 @media screen and (min-width: 768px)
 {
-    .portfolio .card .box-fake{
+    .portfolio .card{
         height: 280px;
     }
 }
 @media screen and (min-width: 992px)
 {
-    .portfolio .card .box-fake{
+    .portfolio .card{
         height: 200px;
     }
 }
