@@ -1,5 +1,6 @@
 /* GENERAL */
 body{
+    color: #fff;
     background-color: #2c3e50;
 }
 h2{
@@ -9,42 +10,45 @@ h2{
 .box-fake{
     background-color: #ccc;
 }
+/* Layout */
 .pt-30{
     padding-top: 30px;
 }
 .pb-30{
     padding-bottom: 30px;
 }
+/* Color */
+.bg-color-aqua{
+    background-color: #1abc9c ;
+}
+.bg-color-white{
+    background-color: #fff;
+}
+.bg-color-white h2{
+    color:#333333;
+}
+
 
 /* SITE HEADER */
-.main-header{
-    /* padding-top: 30px;
-    padding-bottom: 30px; */
-}
+/* fake-content */
 .main-header .box-fake{
     height: 50px;
 }
 
 /* SITE MAIN */
 /* Hero Sect. */
-section.hero{
-    /* padding-top: 30px;
-    padding-bottom: 30px; */
-    background-color: #1abc9c ;
-}
 .hero .box-fake{
     height: 700px;
 }
 
 /* Portfolio Sect. */
 section.portfolio{
-    /* /* padding-top: 30px; */
     padding-bottom: 50px;
-    background-color: #fff;
 }
 .portfolio .card{
     padding: 15px 0;
 }
+/* fake-content */
 .portfolio .card .box-fake{
     height: 500px;
 }
@@ -58,5 +62,24 @@ section.portfolio{
 {
     .portfolio .card .box-fake{
         height: 200px;
+    }
+}
+
+/* About Sect. */
+/* fake-content */
+.about .box-fake{
+    height: 400px;
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 768px)
+{
+    .about .box-fake{
+        height: 250px;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    .about .box-fake{
+        height: 150px;
     }
 }
