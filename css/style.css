@@ -9,10 +9,20 @@ body{
 
 /* SITE HEADER */
 .main-header{
-    height: 120px; /* fake-content */
     padding-top: 30px;
     padding-bottom: 30px;
 }
 .main-header .box-fake{
     height: 50px;
+}
+
+/* SITE MAIN */
+/* Hero Sect. */
+section.hero{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #1abc9c ;
+}
+.hero .box-fake{
+    height: 560px;
 }
