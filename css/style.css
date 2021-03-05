@@ -7,11 +7,14 @@ h2{
     font-size: 25px;
     font-weight: bold;
 }
-/* UTILITIES */
-.box-fake{
-    background-color: #ccc;
+h1,
+h2,
+h3,
+h4{
+    text-transform: uppercase;
 }
 
+/* UTILITIES */
 /* Star Divider */
 .star-divider{
     display: inline-block;
@@ -61,6 +64,9 @@ h2{
     border-radius: 6px;
 }
 /* Layout */
+.mb-40{
+    margin-bottom: 40px;
+}
 .pt-30{
     padding-top: 30px;
 }
@@ -205,16 +211,48 @@ section.portfolio{
 /* SITE FOOTER */
 /* Top Footer */
 .main-footer .top-main-footer{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
     background-color: #3a546d;
 }
-/* fake-content */
-.top-main-footer .box-fake{
-    height: 150px;
-    margin-bottom: 20px;
+
+.top-main-footer div span{
+    color: #1abc9c;
+}
+.top-main-footer .list-inline a.social{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 55px;
+    border: 1px solid #fff;
+    border-radius: 50%;
 }
 
 /* Bottom Footer */
 .main-footer .bottom-main-footer{
-    height: 100px; /* fake-content */
+    padding-top: 40px;
+    padding-bottom: 50px;
     background-color: #2c3e50;
+}
+
+/* RESPONSIVE */
+/* Screen >= 768px */
+@media screen and (min-width: 768px)
+{
+    .top-main-footer h4{
+        font-size: 24px;
+    }
+}
+/* 992px > Screen >= 768px */
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+    .top-main-footer .list-inline a.social{
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+    }
 }
