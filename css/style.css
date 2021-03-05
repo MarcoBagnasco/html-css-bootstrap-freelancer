@@ -1,13 +1,58 @@
 /* GENERAL */
 body{
+    padding-top: 90px;
     color: #fff;
 }
-h2{
+/* h2{
     text-transform: uppercase;
-}
+} */
 /* UTILITIES */
 .box-fake{
     background-color: #ccc;
+}
+
+/* Star Divider */
+.star-divider{
+    display: inline-block;
+    width: 210px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.star-divider i{
+    position: relative;
+    top: 8px;
+}
+.star-divider::before,
+.star-divider::after{
+    content:'';
+    display: inline-block;
+    width: 35%;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+/* RESPONSIVE */
+/* Screen >= 768px */
+@media screen and (min-width:768px){
+    .star-divider{
+        width: 400px;
+    }
+    .star-divider i{
+    padding: 0 15px;
+    }
+}
+/* Screen >= 992px */
+@media screen and (min-width: 992px){
+    .star-divider{
+        width: 480px;
+    }
+    .star-divider i{
+    padding: 0 25px;
+    }
+}
+
+/* Text */
+.bold{
+    font-weight: bold;
 }
 /* Layout */
 .pt-30{
@@ -24,7 +69,6 @@ h2{
     color:#333333;
 }
 
-
 /* SITE HEADER */
 /* Navbar */
 .my-navbar{
@@ -34,14 +78,13 @@ h2{
     padding: 20px 0;
 }
 .my-navbar .my-brand{
-    font-weight: bold;
     color: #fff;
 }
 .my-navbar .navbar-nav>li>a{
     color: #fff;
-    font-weight: bold;
-
 }
+/* RESPONSIVE */
+/* Screen >= 768px */
 @media screen and (min-width: 768px)
 {
     .my-navbar .my-brand{
@@ -51,9 +94,26 @@ h2{
 
 /* SITE MAIN */
 /* Hero Sect. */
-.hero .box-fake{
-    height: 700px;
+.hero img{
+    max-width: 250px;
 }
+/* RESPONSIVE */
+/* Screen >= 768px */
+@media screen and (min-width: 768px)
+{
+    .hero{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .hero h1{
+        font-size: 58px;
+    }
+    .hero h4{
+        font-size: 24px;
+    }
+}
+
+
 
 /* Portfolio Sect. */
 section.portfolio{
