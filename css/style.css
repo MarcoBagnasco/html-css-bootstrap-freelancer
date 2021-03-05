@@ -3,7 +3,10 @@ body{
     padding-top: 90px;
     color: #fff;
 }
-
+h2{
+    font-size: 25px;
+    font-weight: bold;
+}
 /* UTILITIES */
 .box-fake{
     background-color: #ccc;
@@ -48,6 +51,15 @@ body{
     }
 }
 
+/* Buttons */
+.my-btn{
+    padding: 8px 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1abc9c;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
 /* Layout */
 .pt-30{
     padding-top: 30px;
@@ -63,8 +75,6 @@ body{
     color: #2c3e50;
 }
 .h2-dark h2{
-    font-size: 25px;
-    font-weight: 600;
     color:#333333;
 }
 /* Background Color */
@@ -116,8 +126,6 @@ body{
     }
 }
 
-
-
 /* Portfolio Sect. */
 section.portfolio{
     padding-bottom: 45px;
@@ -145,23 +153,23 @@ section.portfolio{
 }
 
 /* About Sect. */
-/* fake-content */
-.about .box-fake{
-    height: 400px;
-    margin-bottom: 30px;
+.about .about-text{
+    padding: 10px 0;
+    font-size: 20px;
 }
+/* RESPONSIVE */
+/* Screen >= 768px */
 @media screen and (min-width: 768px)
 {
-    .about .box-fake{
-        height: 250px;
+    section.about{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .about h2{
+        font-size: 50px;
     }
 }
-@media screen and (min-width: 992px)
-{
-    .about .box-fake{
-        height: 150px;
-    }
-}
+
 
 /* Contact Sect. */
 /* fake-content */
