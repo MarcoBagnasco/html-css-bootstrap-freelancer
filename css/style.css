@@ -3,9 +3,7 @@ body{
     padding-top: 90px;
     color: #fff;
 }
-/* h2{
-    text-transform: uppercase;
-} */
+
 /* UTILITIES */
 .box-fake{
     background-color: #ccc;
@@ -28,7 +26,7 @@ body{
     display: inline-block;
     width: 35%;
     border-radius: 20px;
-    border: 2px solid #fff;
+    border: 2px solid currentColor;
 }
 /* RESPONSIVE */
 /* Screen >= 768px */
@@ -50,10 +48,6 @@ body{
     }
 }
 
-/* Text */
-.bold{
-    font-weight: bold;
-}
 /* Layout */
 .pt-30{
     padding-top: 30px;
@@ -61,12 +55,21 @@ body{
 .pb-30{
     padding-bottom: 30px;
 }
-/* Color */
+/* Text */
+.bold{
+    font-weight: bold;
+}
+.text-color-dark{
+    color: #2c3e50;
+}
+.h2-dark h2{
+    font-size: 25px;
+    font-weight: 600;
+    color:#333333;
+}
+/* Background Color */
 .bg-color-aqua{
     background-color: #1abc9c ;
-}
-.h2-dark{
-    color:#333333;
 }
 
 /* SITE HEADER */
@@ -117,25 +120,27 @@ body{
 
 /* Portfolio Sect. */
 section.portfolio{
-    padding-bottom: 50px;
+    padding-bottom: 45px;
 }
 .portfolio .card{
-    height: 500px; /* fake-content */
-    margin-bottom: 30px;
-    background-color: #ccc;
-    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
 }
-/* fake-content */
+.portfolio .card img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* RESPONSIVE */
+/* Screen >= 768px */
 @media screen and (min-width: 768px)
 {
-    .portfolio .card{
-        height: 280px;
+    section.portfolio{
+        padding-top: 60px;
+        padding-bottom: 70px;
     }
-}
-@media screen and (min-width: 992px)
-{
-    .portfolio .card{
-        height: 200px;
+    .portfolio h2{
+        font-size: 50px;
     }
 }
 
