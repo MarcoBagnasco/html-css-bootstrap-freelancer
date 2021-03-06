@@ -1,6 +1,7 @@
 /* GENERAL */
 body{
     padding-top: 90px;
+    font-size: 20px;
     color: #fff;
 }
 h2{
@@ -15,54 +16,6 @@ h4{
 }
 
 /* UTILITIES */
-/* Star Divider */
-.star-divider{
-    display: inline-block;
-    width: 210px;
-    margin-bottom: 15px;
-    font-size: 30px;
-}
-.star-divider i{
-    position: relative;
-    top: 8px;
-}
-.star-divider::before,
-.star-divider::after{
-    content:'';
-    display: inline-block;
-    width: 35%;
-    border-radius: 20px;
-    border: 2px solid currentColor;
-}
-/* RESPONSIVE */
-/* Screen >= 768px */
-@media screen and (min-width:768px){
-    .star-divider{
-        width: 400px;
-    }
-    .star-divider i{
-    padding: 0 15px;
-    }
-}
-/* Screen >= 992px */
-@media screen and (min-width: 992px){
-    .star-divider{
-        width: 480px;
-    }
-    .star-divider i{
-    padding: 0 25px;
-    }
-}
-
-/* Buttons */
-.my-btn{
-    padding: 10px 18px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #1abc9c;
-    border: 1px solid #fff;
-    border-radius: 6px;
-}
 /* Layout */
 .mb-40{
     margin-bottom: 40px;
@@ -87,6 +40,34 @@ h4{
 .bg-color-aqua{
     background-color: #1abc9c ;
 }
+/* Buttons */
+.my-btn{
+    padding: 10px 18px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #1abc9c;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+/* Star Divider */
+.star-divider{
+    display: inline-block;
+    width: 210px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.star-divider i{
+    position: relative;
+    top: 8px;
+}
+.star-divider::before,
+.star-divider::after{
+    content:'';
+    display: inline-block;
+    width: 35%;
+    border-radius: 20px;
+    border: 2px solid currentColor;
+}
 
 /* SITE HEADER */
 /* Navbar */
@@ -102,34 +83,11 @@ h4{
 .my-navbar .navbar-nav>li>a{
     color: #fff;
 }
-/* RESPONSIVE */
-/* Screen >= 768px */
-@media screen and (min-width: 768px)
-{
-    .my-navbar .my-brand{
-        font-size: 26px;
-    }
-}
 
 /* SITE MAIN */
 /* Hero Sect. */
 .hero img{
     max-width: 250px;
-}
-/* RESPONSIVE */
-/* Screen >= 768px */
-@media screen and (min-width: 768px)
-{
-    .hero{
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    .hero h1{
-        font-size: 58px;
-    }
-    .hero h4{
-        font-size: 24px;
-    }
 }
 
 /* Portfolio Sect. */
@@ -139,47 +97,21 @@ section.portfolio{
 .portfolio .card{
     margin-top: 15px;
     margin-bottom: 15px;
-
+    
 }
 .portfolio .card img{
     width: 100%;
     border-radius: 10px;
 }
-/* RESPONSIVE */
-/* Screen >= 768px */
-@media screen and (min-width: 768px)
-{
-    section.portfolio{
-        padding-top: 60px;
-        padding-bottom: 70px;
-    }
-    .portfolio h2{
-        font-size: 50px;
-    }
-}
 
 /* About Sect. */
 .about .about-text{
     padding: 10px 0;
-    font-size: 20px;
-}
-/* RESPONSIVE */
-/* Screen >= 768px */
-@media screen and (min-width: 768px)
-{
-    section.about{
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    .about h2{
-        font-size: 50px;
-    }
 }
 
 /* Contact Sect. */
 .my-form label{
     margin: 0;
-    font-size: 20px;
     font-weight: normal;
 }
 .my-form input[type="text"],
@@ -195,29 +127,13 @@ section.portfolio{
 .my-form textarea{
     height: 150px;
 }
-/* RESPONSIVE */
-/* Screen >= 768px */
-@media screen and (min-width: 768px)
-{
-    section.contact{
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    .contact h2{
-        font-size: 50px;
-    }
-}
 
 /* SITE FOOTER */
 /* Top Footer */
 .main-footer .top-main-footer{
-    padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
+    padding: 50px 20px 30px;
     background-color: #3a546d;
 }
-
 .top-main-footer div span{
     color: #1abc9c;
 }
@@ -225,7 +141,6 @@ section.portfolio{
     display: inline-block;
     width: 55px;
     height: 55px;
-    font-size: 20px;
     color: #fff;
     line-height: 55px;
     border: 1px solid #fff;
@@ -236,23 +151,66 @@ section.portfolio{
 .main-footer .bottom-main-footer{
     padding-top: 40px;
     padding-bottom: 50px;
+    font-size: 14px;
     background-color: #2c3e50;
 }
 
 /* RESPONSIVE */
 /* Screen >= 768px */
-@media screen and (min-width: 768px)
-{
-    .top-main-footer h4{
+@media screen and (min-width: 768px){
+    /* General */
+    h1{
+        font-size: 58px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    h4{
         font-size: 24px;
     }
+    /* Section Padding*/
+    section.pt-30{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    section.portfolio{
+        padding-bottom: 70px;
+    }
+    /* Star Divider */
+    .star-divider{
+        width: 400px;
+    }
+    .star-divider i{
+        padding: 0 15px;
+    }
+    /* Navbar Brand */
+    .my-navbar .my-brand{
+        font-size: 26px;
+    }
+    /* Footer List */
+    .top-main-footer .mb-40{
+        margin-bottom: 20px;
+    }
 }
+
 /* 992px > Screen >= 768px */
 @media screen and (min-width: 768px) and (max-width: 992px)
 {
+    /* Footer List */
     .top-main-footer .list-inline a.social{
         width: 42px;
         height: 42px;
         line-height: 42px;
+    }
+}
+
+/* Screen >= 992px */
+@media screen and (min-width: 992px){
+    /* Star Divider */
+    .star-divider{
+        width: 480px;
+    }
+    .star-divider i{
+    padding: 0 25px;
     }
 }
