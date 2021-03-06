@@ -1,4 +1,8 @@
 /* GENERAL */
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
 body{
     padding-top: 90px;
     font-size: 20px;
@@ -49,6 +53,14 @@ h4{
     border: 1px solid #fff;
     border-radius: 6px;
 }
+/* Buttons Interations */
+.my-btn:hover{
+    background-color: #fff;
+}
+.my-btn.my-btn-dim:hover{
+    color: #fff;
+    background-color: #12816b;
+}
 /* Star Divider */
 .star-divider{
     display: inline-block;
@@ -83,6 +95,23 @@ h4{
 .my-navbar .navbar-nav>li>a{
     color: #fff;
 }
+/* Navbar Interations */
+.my-navbar .my-brand:hover{
+    color: #fff;
+    text-shadow: 0 0 5px #1abc9c;
+}
+.my-navbar .navbar-nav>li>a:hover{
+    color:#1abc9c;
+}
+.my-navbar .navbar-nav>li>a:active{
+    background-color: rgba(255,255,255,.3);
+    border-radius: 10px;
+}
+.my-navbar .my-brand:focus,
+.my-navbar .navbar-nav>li>a:focus{
+    color: #fff;
+}
+
 
 /* SITE MAIN */
 /* Hero Sect. */
@@ -94,14 +123,48 @@ h4{
 section.portfolio{
     padding-bottom: 45px;
 }
+/* Cards */
 .portfolio .card{
+    position: relative;
     margin-top: 15px;
     margin-bottom: 15px;
-    
 }
 .portfolio .card img{
     width: 100%;
     border-radius: 10px;
+}
+.portfolio .card::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1abc9cc0;
+    border-radius: 10px;
+}
+.portfolio .card::after{
+    content: "\f067";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 64px;
+    color: #fff;
+}
+.portfolio .card::before,
+.portfolio .card::after{
+    opacity: 0;
+    transition: opacity .4s;
+}
+/* Cards Interactions */
+.portfolio .card:hover::before,
+.portfolio .card:hover::after{
+    opacity: 1;
+    cursor: pointer;
 }
 
 /* About Sect. */
@@ -137,6 +200,7 @@ section.portfolio{
 .top-main-footer div span{
     color: #1abc9c;
 }
+/* Socila Icons */
 .top-main-footer .list-inline a.social{
     display: inline-block;
     width: 55px;
@@ -145,6 +209,14 @@ section.portfolio{
     line-height: 55px;
     border: 1px solid #fff;
     border-radius: 50%;
+    transition: all .6s;
+}
+/* Social Icons Interations */
+.top-main-footer .list-inline a.social:hover{
+    transform: rotate(720deg)
+                scale(1.4);
+    color: #1abc9c;
+    box-shadow: 0 0 5px 2px #1abc9c inset, 0 0 5px 2px #1abc9c;
 }
 
 /* Bottom Footer */
